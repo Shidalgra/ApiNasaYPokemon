@@ -59,7 +59,9 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
           },
         ),
         title: Text(
-          'Fotos de Marte',
+          FFLocalizations.of(context).getText(
+            'w8y4y86r' /* Fotos de Marte */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,

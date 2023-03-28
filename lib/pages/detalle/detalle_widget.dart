@@ -47,7 +47,9 @@ class _DetalleWidgetState extends State<DetalleWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'Detalle',
+          FFLocalizations.of(context).getText(
+            '1y5kmx9m' /* Detalle */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,

@@ -63,7 +63,9 @@ class _PokemonWidgetState extends State<PokemonWidget> {
           },
         ),
         title: Text(
-          'Pokémon',
+          FFLocalizations.of(context).getText(
+            'daxx8i1y' /* Pokémon */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,

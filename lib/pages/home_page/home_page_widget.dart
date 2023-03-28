@@ -45,7 +45,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'Página Principal',
+          FFLocalizations.of(context).getText(
+            'nehrqytj' /* Página Principal */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,
@@ -74,7 +76,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         autofocus: true,
                         obscureText: false,
                         decoration: InputDecoration(
-                          hintText: '[ Ingrese un texto...]',
+                          hintText: FFLocalizations.of(context).getText(
+                            'z9nclqse' /* [ Ingrese un texto...] */,
+                          ),
                           hintStyle: FlutterFlowTheme.of(context).bodyText2,
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
@@ -149,7 +153,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   },
                                 );
                               },
-                              text: 'Parámetro',
+                              text: FFLocalizations.of(context).getText(
+                                '23lnxf7y' /* Parámetro */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,
@@ -195,7 +201,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   }.withoutNulls,
                                 );
                               },
-                              text: 'Pokemon',
+                              text: FFLocalizations.of(context).getText(
+                                'wztzya4k' /* Pokemon */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,
@@ -233,7 +241,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               onPressed: () async {
                                 context.pushNamed('galeria');
                               },
-                              text: 'Fotos Marte',
+                              text: FFLocalizations.of(context).getText(
+                                'sxg7iby9' /* Fotos Marte */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,
@@ -277,10 +287,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             FFButtonWidget(
-                              onPressed: () {
-                                print('Button pressed ...');
+                              onPressed: () async {
+                                context.pushNamed('Semana10_1');
                               },
-                              text: 'Button',
+                              text: FFLocalizations.of(context).getText(
+                                'z3uoiw3p' /* Semana10_1 */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,
@@ -315,10 +327,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 5.0, 5.0, 5.0, 5.0),
                             child: FFButtonWidget(
-                              onPressed: () {
-                                print('Button pressed ...');
+                              onPressed: () async {
+                                context.pushNamed('Semana10_2');
                               },
-                              text: 'Button',
+                              text: FFLocalizations.of(context).getText(
+                                'xmrdl40l' /* Semana10_2 */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,
@@ -356,7 +370,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               onPressed: () {
                                 print('Button pressed ...');
                               },
-                              text: 'Button',
+                              text: FFLocalizations.of(context).getText(
+                                'wjefbbwc' /* Button */,
+                              ),
                               options: FFButtonOptions(
                                 width: 130.0,
                                 height: 40.0,

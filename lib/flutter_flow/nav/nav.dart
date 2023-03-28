@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import '../flutter_flow_theme.dart';
+import '../../backend/backend.dart';
 
 import '../../index.dart';
 import '../../main.dart';
@@ -59,6 +60,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'galeria',
           path: '/galeria',
           builder: (context, params) => GaleriaWidget(),
+        ),
+        FFRoute(
+          name: 'Semana10_1',
+          path: '/semana101',
+          builder: (context, params) => Semana101Widget(),
+        ),
+        FFRoute(
+          name: 'Semana10_2',
+          path: '/semana102',
+          builder: (context, params) => Semana102Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       urlPathStrategy: UrlPathStrategy.path,
@@ -131,6 +142,7 @@ class FFParameters {
     String paramName,
     ParamType type, [
     bool isList = false,
+    List<String>? collectionNamePath,
   ]) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -144,11 +156,7 @@ class FFParameters {
       return param;
     }
     // Return serialized value.
-    return deserializeParam<T>(
-      param,
-      type,
-      isList,
-    );
+    return deserializeParam<T>(param, type, isList, collectionNamePath);
   }
 }
 
